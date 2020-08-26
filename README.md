@@ -15,3 +15,7 @@
 * Kopiera innehållet i publika nyckeln ```pbcopy < id_rsa.pub```
 
 * Klistra in innehållet i clipboard till GITHUB > settings > ssh and gpg settings
+
+* Testar autentifikation mot GITHUB ```ssh -T git@github.com``` Detta lägger också till i filen ```known_hosts
+
+* 
