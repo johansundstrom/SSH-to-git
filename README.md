@@ -8,10 +8,10 @@
 
 * Filerna ``ìd_rsa```och ```id_rsa.pub``` skapades
 
-* Kontrollera att ssh-agenten körs med ```eval "$(ssh-agent -s)"````
+* Kontrollera att ssh-agenten körs med ```eval "$(ssh-agent -s)"```
 
-* Lägg till privata nyckeln till ssh-agent ```ssh-add id_rsa````
+* Lägg till privata nyckeln till ssh-agent ```ssh-add id_rsa```
 
-* Kopiera innehållet i publika nyckeln ```pbcopy < id_rsa.pub````
+* Kopiera innehållet i publika nyckeln ```pbcopy < id_rsa.pub```
 
-* Klistra in innehållet i clipboard till GITHUB > settings > 
+* Klistra in innehållet i clipboard till GITHUB > settings > ssh and gpg settings
