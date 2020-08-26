@@ -18,4 +18,6 @@
 
 * Testar autentifikation mot GITHUB ```ssh -T git@github.com``` Detta lägger också till i filen ```known_hosts
 
-* 
+* Vid clone använd SSH copy URL istället för HTTPS copy URL
+
+* Gå till shell och toucha, add, commit och push. Detta kräver inte inlogg
