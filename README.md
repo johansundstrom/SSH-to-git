@@ -26,3 +26,8 @@
 * I Apps and Features, se till att Open SSH Server är startad, annars lägg till
 * Kontrollera att servicen är startad med ```ssh-agent -s```
 * Se Bash instruktion p. 6
+
+## Förlorad publik nyckel
+
+* Kör ```ssh-keygen -y -f {privat-nyckel} > publik-nyckel```
+* Vid password kommer prompt
