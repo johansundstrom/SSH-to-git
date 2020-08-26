@@ -1,4 +1,4 @@
-# SSH-to-git
+# SSH-to-github
 
 ## BASH
 
