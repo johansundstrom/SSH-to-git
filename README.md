@@ -1,5 +1,7 @@
 # SSH-to-git
 
+## BASH
+
 * CD'a över till ~/.ssh
 * Visa innehållet i katalogen med ```ls -la```
 * Skapa nyckalr med ```ssh-keygen -t rsa -b 4096 -C your-email```
@@ -12,3 +14,9 @@
 * Vid clone använd SSH copy URL istället för HTTPS copy URL
 * Gå till shell och toucha, add, commit och push. Detta kräver inte inlogg
 
+## VS CODE
+
+* Klicka på "Source Control"
+* Klicka på "Open Repository"
+* Klistra in ```git@github.com:xxxxxx.git```
+* Open
