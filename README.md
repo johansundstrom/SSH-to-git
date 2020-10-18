@@ -27,6 +27,12 @@
 * Kontrollera att servicen är startad med ```ssh-agent -s```
 * Se Bash instruktion p. 6
 
+### Problem
+
+* "Could not open a connection to your authentication agent"
+* ```"C:\Program Files\Git\cmd\start-ssh-agent.cmd"``` 
+* Skriv lösenordet som kombinerades vid skapandet av nyckel
+
 ## Förlorad publik nyckel
 
 * Kör ```ssh-keygen -y -f {privat-nyckel} > publik-nyckel```
