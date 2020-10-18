@@ -2,10 +2,10 @@
 
 ## BASH
 
-1. CD'a över till ~/.ssh
-2. Visa innehållet i katalogen med ```ls -la```
-1. Skapa nyckalr med ```ssh-keygen -t rsa -b 4096 -C your-email```
-1. Kontrollera att filerna ```ìd_rsa```och ```id_rsa.pub``` skapades
+1. Skapa och CD'a till ~/.ssh
+2. Lista innehållet ```ls -la```
+1. Skapa nycklar ```ssh-keygen -t rsa -b 4096 -C your-email```
+1. Kontrollera att filerna ```ìd_rsa``` (privat) och ```id_rsa.pub``` (publik) skapades
 1. Kontrollera att ssh-agenten körs med ```eval "$(ssh-agent -s)"``` svar med PID ges
 1. Lägg till privata nyckeln till ssh-agent ```ssh-add id_rsa```
 1. Kopiera innehållet i publika nyckeln ```pbcopy < id_rsa.pub```
