@@ -2,7 +2,7 @@
 
 ## BASH
 
-1. Skapa och CD'a till ~/.ssh
+1. Skapa mappen och CD'a till ~/.ssh
 2. Lista innehållet ```ls -la```
 1. Skapa nycklar ```ssh-keygen -t rsa -b 4096 -C your-email```
 1. Kontrollera att filerna ```id_rsa``` (privat) och ```id_rsa.pub``` (publik) skapades
