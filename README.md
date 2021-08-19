@@ -1,24 +1,42 @@
 # SSH-to-github
 
-## BASH
+## GIT-BASH
 
 1. (Skapa mappen och) CD'a till ~/.ssh
 2. Lista innehållet ```ls -la```
-1. Skapa nycklar ```ssh-keygen -t rsa -b 4096 -C your-email```
-1. Kontrollera att filerna ```id_rsa``` (privat) och ```id_rsa.pub``` (publik) skapades
-1. Kontrollera att ssh-agenten körs med ```eval "$(ssh-agent -s)"``` svar med PID ges
-1. Lägg till privata nyckeln till ssh-agent ```ssh-add ~/.ssh/id_rsa```
-1. Kopiera innehållet i publika nyckeln ```pbcopy < ~/.ssh/id_rsa.pub``` eller ```clip < ~/.ssh/id_rsa.pub```
-1. Klistra in innehållet i clipboard till GITHUB > settings > ssh and gpg settings
-1. Testar autentifikation mot GITHUB ```ssh -T git@github.com``` Detta lägger också till i filen ```known_hosts```
-1. Vid clone repo - använd ```SSH copy URL``` istället för ```HTTPS copy URL```
-1. Gå till shell och toucha, add, commit och push. Detta kräver inte inlogg
+
+### Skapa nycklar
+
+3. Skapa nycklar ```ssh-keygen -t rsa -b 4096 -C <your-email>```
+4. Kontrollera att filerna ```id_rsa``` (privat) och ```id_rsa.pub``` (publik) skapades
+5. Kontrollera att ssh-agenten körs med ```eval "$(ssh-agent -s)"``` svar med PID ges
+
+### Lägg till nyckeln till agenten
+
+6. Lägg till privata nyckeln till ssh-agent ```ssh-add ~/.ssh/id_rsa```
+
+### Kopiera publik nyckel i t.ex. GitHub
+
+7. Kopiera innehållet i publika nyckeln ```pbcopy < ~/.ssh/id_rsa.pub``` eller ```clip < ~/.ssh/id_rsa.pub```
+8. Klistra in innehållet i clipboard till GITHUB > settings > ssh and gpg settings
+
+### Testa autentifiering
+
+9.  Testar autentifikation mot GITHUB ```ssh -T git@github.com``` Detta lägger också till i filen ```known_hosts```
+
+### Annat förfarande i Github
+
+10. Vid clone repo - använd ```SSH copy URL``` istället för ```HTTPS copy URL```
+
+### Testa
+
+11. Gå till shell och toucha, add, commit och push. Detta kräver inte inlogg
 
 ## VS CODE
 
 * Klicka på "Source Control"
 * Klicka på "Open Repository"
-* Klistra in ```git@github.com:xxxxxx.git```
+* Klistra in ```git@github.com:<ditt repo>.git```
 * Open
 
 ## Windows
