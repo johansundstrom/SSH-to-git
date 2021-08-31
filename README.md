@@ -17,7 +17,7 @@
 
 ### Kopiera publik nyckel i t.ex. GitHub
 
-7. Kopiera innehållet i publika nyckeln ```pbcopy < ~/.ssh/id_rsa.pub``` eller ```clip < ~/.ssh/id_rsa.pub```
+7. Kopiera innehållet i publika nyckeln ```pbcopy < ~/.ssh/id_rsa.pub``` eller ```clip < ~/.ssh/id_rsa.pub``` (Windows)
 8. Klistra in innehållet i clipboard till GITHUB > settings > ssh and gpg keys
 
 ### Testa autentifiering
